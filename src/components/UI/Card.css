@@ -1,0 +1,5 @@
+.card {
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+    /*moved from ExpenseItem.css - .expense-item class*/
+}
