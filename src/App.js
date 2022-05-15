@@ -7,7 +7,7 @@ function App() {
     const [expenses,setExpenses] = useState(DUMMY_EXPENSE); 
 
     function fetchData(){
-        fetch('http://localhost/FASTSP22_Web/expense_api/api/read.php').then(
+        fetch('http://alphapeeler.sourceforge.net/FAST/WebSp22/rectexpapi/api/read.php').then(
             response => {
                 return response.json()
             }
@@ -27,7 +27,7 @@ function App() {
         //console.log(expense);
         //const updatedExpense = [expense, ...expenses];
         //setExpenses(updatedExpense);
-        fetch('http://localhost/FASTSP22_Web/expense_api/api/create.php', {
+        fetch('http://alphapeeler.sourceforge.net/FAST/WebSp22/rectexpapi/api/create.php', {
             method: 'POST',
             body: JSON.stringify(expense),
             headers: {
